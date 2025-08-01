@@ -1,4 +1,4 @@
-use librustdesk::*;
+use libremotedesk::*;
 
 #[cfg(not(target_os = "macos"))]
 fn main() {}
