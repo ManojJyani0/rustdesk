@@ -43,7 +43,7 @@ Voor specifieke git instructies, zie [GitHub workflow 101](https://github.com/se
 
 ## Gedrag
 
-https://github.com/remotedesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/rustdesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## Communicatie
 

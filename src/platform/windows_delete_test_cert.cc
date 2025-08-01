@@ -1,4 +1,4 @@
-// https://github.com/remotedesk/remotedesk/discussions/6444#discussioncomment-9010062
+// https://github.com/rustdesk/remotedesk/discussions/6444#discussioncomment-9010062
 
 #include <iostream>
 #include <Windows.h>

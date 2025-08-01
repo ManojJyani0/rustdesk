@@ -5,8 +5,8 @@
   <a href="#структура-файлов">Структура файлов</a> •
   <a href="#скриншоты">Скриншоты</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-VN.md">Tiếng Việt</a>] | [<a href="README-GR.md">Ελληνικά</a>]<br>
-  <b>Нам нужна ваша помощь в переводе этого README, <a href="https://github.com/remotedesk/remotedesk/tree/master/src/lang">интерфейса RemoteDesk</a>
-     и <a href="https://github.com/remotedesk/doc.remotedesk.com">документации RemoteDesk</a> на ваш родной язык.</b>
+  <b>Нам нужна ваша помощь в переводе этого README, <a href="https://github.com/rustdesk/remotedesk/tree/master/src/lang">интерфейса RemoteDesk</a>
+     и <a href="https://github.com/rustdesk/doc.remotedesk.com">документации RemoteDesk</a> на ваш родной язык.</b>
 </p>
 
 > [!Caution]
@@ -17,19 +17,19 @@
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-Ещё одно программное обеспечение для удаленного рабочего стола, написанное на Rust. Работает из коробки, настройки не требует. Вы полностью контролируете свои данные, не беспокоясь о безопасности. Вы можете использовать наш сервер ретрансляции, [настроить свой собственный](https://remotedesk.com/server), или [написать свой](https://github.com/remotedesk/remotedesk-server-demo).
+Ещё одно программное обеспечение для удаленного рабочего стола, написанное на Rust. Работает из коробки, настройки не требует. Вы полностью контролируете свои данные, не беспокоясь о безопасности. Вы можете использовать наш сервер ретрансляции, [настроить свой собственный](https://remotedesk.com/server), или [написать свой](https://github.com/rustdesk/remotedesk-server-demo).
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
 RemoteDesk приветствует вклад каждого. Ознакомьтесь с [`docs/CONTRIBUTING-RU.md`](CONTRIBUTING-RU.md) в начале работы для понимания.
 
-[**Как работает RemoteDesk?**](https://github.com/remotedesk/remotedesk/wiki/How-does-RemoteDesk-work%3F) (Документация на английском языке)
+[**Как работает RemoteDesk?**](https://github.com/rustdesk/remotedesk/wiki/How-does-RemoteDesk-work%3F) (Документация на английском языке)
 
-[**Часто задаваемые вопросы**](https://github.com/remotedesk/remotedesk/wiki/FAQ) (Страница на английском языке)
+[**Часто задаваемые вопросы**](https://github.com/rustdesk/remotedesk/wiki/FAQ) (Страница на английском языке)
 
-[**СКАЧАТЬ ПРИЛОЖЕНИЕ**](https://github.com/remotedesk/remotedesk/releases)
+[**СКАЧАТЬ ПРИЛОЖЕНИЕ**](https://github.com/rustdesk/remotedesk/releases)
 
-[**НОЧНЫЕ СБОРКИ (Актуальные)**](https://github.com/remotedesk/remotedesk/releases/tag/nightly)
+[**НОЧНЫЕ СБОРКИ (Актуальные)**](https://github.com/rustdesk/remotedesk/releases/tag/nightly)
 
 [<img src="https://f-droid.org/badge/get-it-on.png"
     alt="Get it on F-Droid"
@@ -40,7 +40,7 @@ RemoteDesk приветствует вклад каждого. Ознакомь�
 
 ## Зависимости
 
-Для ПК-версии используются библиотеки Flutter или Sciter (устаревшее) для графического интерфейса. Данное руководство подразумевает работу с Sciter, так как он более простой в использовании и с ним легче начать работу. Вы можете также посмотреть на механизм нашего [CI](https://github.com/remotedesk/remotedesk/blob/master/.github/workflows/flutter-build.yml) для сборок на Flutter.
+Для ПК-версии используются библиотеки Flutter или Sciter (устаревшее) для графического интерфейса. Данное руководство подразумевает работу с Sciter, так как он более простой в использовании и с ним легче начать работу. Вы можете также посмотреть на механизм нашего [CI](https://github.com/rustdesk/remotedesk/blob/master/.github/workflows/flutter-build.yml) для сборок на Flutter.
 
 Загрузите динамическую библиотеку Flutter самостоятельно.
 
@@ -119,7 +119,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone --recurse-submodules https://github.com/remotedesk/remotedesk
+git clone --recurse-submodules https://github.com/rustdesk/remotedesk
 cd remotedesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -132,7 +132,7 @@ VCPKG_ROOT=$HOME/vcpkg cargo run
 Начните с клонирования репозитория и создания docker-контейнера:
 
 ```sh
-git clone https://github.com/remotedesk/remotedesk
+git clone https://github.com/rustdesk/remotedesk
 cd remotedesk
 git submodule update --init --recursive
 docker build -t "remotedesk-builder" .
@@ -160,24 +160,24 @@ target/release/remotedesk
 
 ## Структура файлов
 
-- **[libs/hbb_common](https://github.com/remotedesk/remotedesk/tree/master/libs/hbb_common)**: видеокодек, конфигурация, враппер TCP/UDP, protobuf, функции файловой системы для передачи файлов и некоторые другие служебные функции
-- **[libs/scrap](https://github.com/remotedesk/remotedesk/tree/master/libs/scrap)**: захват экрана
-- **[libs/enigo](https://github.com/remotedesk/remotedesk/tree/master/libs/enigo)**: специфичное для платформы управление клавиатурой/мышью
-- **[libs/clipboard](https://github.com/remotedesk/remotedesk/tree/master/libs/clipboard)**: функционал буфера обмена файлами для Windows, Linux, и macOS
-- **[src/ui](https://github.com/remotedesk/remotedesk/tree/master/src/ui)**: графический пользовательский интерфейс на Sciter (устаревшее)
-- **[src/server](https://github.com/remotedesk/remotedesk/tree/master/src/server)**: сервисы аудио, буфера обмена, ввода, видео и сетевых подключений
-- **[src/client.rs](https://github.com/remotedesk/remotedesk/tree/master/src/client.rs)**: одноранговое соединение
-- **[src/rendezvous_mediator.rs](https://github.com/remotedesk/remotedesk/tree/master/src/rendezvous_mediator.rs)**: связь с [сервером Rustdesk](https://github.com/remotedesk/remotedesk-server), ожидает удаленного прямого (через TCP hole punching) или ретранслируемого соединения
-- **[src/platform](https://github.com/remotedesk/remotedesk/tree/master/src/platform)**: специфичный для платформы код
-- **[flutter](https://github.com/remotedesk/remotedesk/tree/master/flutter)**: код Flutter для ПК-версии и мобильных устройств
-- **[flutter/web/js](https://github.com/remotedesk/remotedesk/tree/master/flutter/web/v1/js)**: JavaScript для Web-клиента Flutter
+- **[libs/hbb_common](https://github.com/rustdesk/remotedesk/tree/master/libs/hbb_common)**: видеокодек, конфигурация, враппер TCP/UDP, protobuf, функции файловой системы для передачи файлов и некоторые другие служебные функции
+- **[libs/scrap](https://github.com/rustdesk/remotedesk/tree/master/libs/scrap)**: захват экрана
+- **[libs/enigo](https://github.com/rustdesk/remotedesk/tree/master/libs/enigo)**: специфичное для платформы управление клавиатурой/мышью
+- **[libs/clipboard](https://github.com/rustdesk/remotedesk/tree/master/libs/clipboard)**: функционал буфера обмена файлами для Windows, Linux, и macOS
+- **[src/ui](https://github.com/rustdesk/remotedesk/tree/master/src/ui)**: графический пользовательский интерфейс на Sciter (устаревшее)
+- **[src/server](https://github.com/rustdesk/remotedesk/tree/master/src/server)**: сервисы аудио, буфера обмена, ввода, видео и сетевых подключений
+- **[src/client.rs](https://github.com/rustdesk/remotedesk/tree/master/src/client.rs)**: одноранговое соединение
+- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/remotedesk/tree/master/src/rendezvous_mediator.rs)**: связь с [сервером Rustdesk](https://github.com/rustdesk/remotedesk-server), ожидает удаленного прямого (через TCP hole punching) или ретранслируемого соединения
+- **[src/platform](https://github.com/rustdesk/remotedesk/tree/master/src/platform)**: специфичный для платформы код
+- **[flutter](https://github.com/rustdesk/remotedesk/tree/master/flutter)**: код Flutter для ПК-версии и мобильных устройств
+- **[flutter/web/js](https://github.com/rustdesk/remotedesk/tree/master/flutter/web/v1/js)**: JavaScript для Web-клиента Flutter
 
 ## Скриншоты
 
-![Менеджер соединений](https://github.com/remotedesk/remotedesk/assets/28412477/db82d4e7-c4bc-4823-8e6f-6af7eadf7651)
+![Менеджер соединений](https://github.com/rustdesk/remotedesk/assets/28412477/db82d4e7-c4bc-4823-8e6f-6af7eadf7651)
 
-![Подключение к удалённому рабочему столу на Windows](https://github.com/remotedesk/remotedesk/assets/28412477/9baa91e9-3362-4d06-aa1a-7518edcbd7ea)
+![Подключение к удалённому рабочему столу на Windows](https://github.com/rustdesk/remotedesk/assets/28412477/9baa91e9-3362-4d06-aa1a-7518edcbd7ea)
 
-![Передача файлов](https://github.com/remotedesk/remotedesk/assets/28412477/39511ad3-aa9a-4f8c-8947-1cce286a46ad)
+![Передача файлов](https://github.com/rustdesk/remotedesk/assets/28412477/39511ad3-aa9a-4f8c-8947-1cce286a46ad)
 
-![TCP-туннелирование](https://github.com/remotedesk/remotedesk/assets/28412477/78e8708f-e87e-4570-8373-1360033ea6c5)
+![TCP-туннелирование](https://github.com/rustdesk/remotedesk/assets/28412477/78e8708f-e87e-4570-8373-1360033ea6c5)

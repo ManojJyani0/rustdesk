@@ -1429,7 +1429,7 @@ class InputModel {
       Rect rect,
       {int buttons = kPrimaryMouseButton}) {
     double minX = rect.left;
-    // https://github.com/remotedesk/remotedesk/issues/6678
+    // https://github.com/rustdesk/remotedesk/issues/6678
     // For Windows, [0,maxX], [0,maxY] should be set to enable window snapping.
     double maxX = (rect.left + rect.width) -
         (peerPlatform == kPeerPlatformWindows ? 0 : 1);

@@ -6,22 +6,22 @@
   <a href="#file-structure">Structuur</a> •
   <a href="#snapshot">Snapshot</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-VN.md">Tiếng Việt</a>] | [<a href="README-GR.md">Ελληνικά</a>]<br>
-  <b>Wij hebben uw hulp nodig om dit README bestand te vertalen, <a href="https://github.com/remotedesk/remotedesk/tree/master/src/lang">RemoteDesk UI</a> en <a href="https://github.com/remotedesk/doc.remotedesk.com">Doc</a> naar uw moedertaal</b>
+  <b>Wij hebben uw hulp nodig om dit README bestand te vertalen, <a href="https://github.com/rustdesk/remotedesk/tree/master/src/lang">RemoteDesk UI</a> en <a href="https://github.com/rustdesk/doc.remotedesk.com">Doc</a> naar uw moedertaal</b>
 </p>
 
 Chat met ons: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/remotedesk) | [Reddit](https://www.reddit.com/r/remotedesk) | [YouTube](https://www.youtube.com/@remotedesk)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-Alweer een andere programma voor -bureaublad op afstand-, geschreven in Rust. Werkt -out of the box-, geen configuratie nodig. U heeft volledige controle over uw gegevens, en hoeft zich geen zorgen te maken over de beveiliging. U kunt onze rendez-vous/relay server gebruiken, [je eigen server opzetten](https://remotedesk.com/blog/id-relay-set), of [je eigen rendez-vous/relay-server schrijven](https://github.com/remotedesk/remotedesk-server-demo).
+Alweer een andere programma voor -bureaublad op afstand-, geschreven in Rust. Werkt -out of the box-, geen configuratie nodig. U heeft volledige controle over uw gegevens, en hoeft zich geen zorgen te maken over de beveiliging. U kunt onze rendez-vous/relay server gebruiken, [je eigen server opzetten](https://remotedesk.com/blog/id-relay-set), of [je eigen rendez-vous/relay-server schrijven](https://github.com/rustdesk/remotedesk-server-demo).
 
 RemoteDesk verwelkomt bijdragen van iedereen. Zie [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) voor hulp om aan de slag te gaan.
 
-[**FAQ**](https://github.com/remotedesk/remotedesk/wiki/FAQ)
+[**FAQ**](https://github.com/rustdesk/remotedesk/wiki/FAQ)
 
-[**BINARY DOWNLOAD**](https://github.com/remotedesk/remotedesk/releases)
+[**BINARY DOWNLOAD**](https://github.com/rustdesk/remotedesk/releases)
 
-[**NIGHTLY BUILD**](https://github.com/remotedesk/remotedesk/releases/tag/nightly) (meest recente build)
+[**NIGHTLY BUILD**](https://github.com/rustdesk/remotedesk/releases/tag/nightly) (meest recente build)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Download het op F-Droid"
@@ -106,7 +106,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/remotedesk/remotedesk
+git clone https://github.com/rustdesk/remotedesk
 cd remotedesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -119,7 +119,7 @@ VCPKG_ROOT=$HOME/vcpkg cargo run
 Begin met het klonen van de repository en het bouwen van de docker container:
 
 ```sh
-git clone https://github.com/remotedesk/remotedesk
+git clone https://github.com/rustdesk/remotedesk
 cd remotedesk
 docker build -t "remotedesk-builder" .
 ```
@@ -148,14 +148,14 @@ Zorg ervoor dat je deze commando's van de root van de RemoteDesk-repository uitv
 
 ## Bestandsstructuur
 
-- **[libs/hbb_common](https://github.com/remotedesk/remotedesk/tree/master/libs/hbb_common)**: videocodec, configuratie, TCP/UDP-wrapper, protobuf, bestandssysteemfuncties voor bestandsoverdracht en nog wat andere nuttige functies
-- **[libs/scrap](https://github.com/remotedesk/remotedesk/tree/master/libs/scrap)**: schermopname
-- **[libs/enigo](https://github.com/remotedesk/remotedesk/tree/master/libs/enigo)**: platformspecifieke muis- en toetsenbordbeheer
-- **[src/ui](https://github.com/remotedesk/remotedesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/remotedesk/remotedesk/tree/master/src/server)**: geluids-, klembord-, invoer- en video-services, netwerkverbindingen
-- **[src/client.rs](https://github.com/remotedesk/remotedesk/tree/master/src/client.rs)**: voor het opzetten van peer-verbindingen
-- **[src/rendezvous_mediator.rs](https://github.com/remotedesk/remotedesk/tree/master/src/rendezvous_mediator.rs)**: Communicatie met [remotedesk-server](https://github.com/remotedesk/remotedesk-server), afwachten van redirect op afstand (TCP hole punching) of een relayed verbinding
-- **[src/platform](https://github.com/remotedesk/remotedesk/tree/master/src/platform)**: platformspecifieke code
+- **[libs/hbb_common](https://github.com/rustdesk/remotedesk/tree/master/libs/hbb_common)**: videocodec, configuratie, TCP/UDP-wrapper, protobuf, bestandssysteemfuncties voor bestandsoverdracht en nog wat andere nuttige functies
+- **[libs/scrap](https://github.com/rustdesk/remotedesk/tree/master/libs/scrap)**: schermopname
+- **[libs/enigo](https://github.com/rustdesk/remotedesk/tree/master/libs/enigo)**: platformspecifieke muis- en toetsenbordbeheer
+- **[src/ui](https://github.com/rustdesk/remotedesk/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/rustdesk/remotedesk/tree/master/src/server)**: geluids-, klembord-, invoer- en video-services, netwerkverbindingen
+- **[src/client.rs](https://github.com/rustdesk/remotedesk/tree/master/src/client.rs)**: voor het opzetten van peer-verbindingen
+- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/remotedesk/tree/master/src/rendezvous_mediator.rs)**: Communicatie met [remotedesk-server](https://github.com/rustdesk/remotedesk-server), afwachten van redirect op afstand (TCP hole punching) of een relayed verbinding
+- **[src/platform](https://github.com/rustdesk/remotedesk/tree/master/src/platform)**: platformspecifieke code
 
 ## Snapshot
 

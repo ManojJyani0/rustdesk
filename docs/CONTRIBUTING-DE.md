@@ -43,7 +43,7 @@ Spezifische Git-Anweisungen finden Sie im [GitHub-Workflow](https://github.com/s
 
 ## Verhalten
 
-https://github.com/remotedesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/rustdesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## Kommunikation
 

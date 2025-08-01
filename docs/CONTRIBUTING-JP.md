@@ -34,7 +34,7 @@ RemoteDesk またはその依存関係へのコントリビュートは、GitHub
 
 ## 行動規範
 
-https://github.com/remotedesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/rustdesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## コミュニケーション
 

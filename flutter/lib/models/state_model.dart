@@ -105,7 +105,7 @@ class StateGlobal {
       final wc = WindowController.fromWindowId(windowId);
       wc.setFullscreen(_fullscreen.isTrue).then((_) {
         // We remove the redraw (width + 1, height + 1), because this issue cannot be reproduced.
-        // https://github.com/remotedesk/remotedesk/issues/9675
+        // https://github.com/rustdesk/remotedesk/issues/9675
       });
     }
   }

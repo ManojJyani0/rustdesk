@@ -11,8 +11,8 @@
 #
 # It accepts the following arguments:
 #
-# - versionName from https://github.com/remotedesk/remotedesk/releases/download/fdroid-version/remotedesk-version.txt
-# - versionCode from https://github.com/remotedesk/remotedesk/releases/download/fdroid-version/remotedesk-version.txt
+# - versionName from https://github.com/rustdesk/remotedesk/releases/download/fdroid-version/remotedesk-version.txt
+# - versionCode from https://github.com/rustdesk/remotedesk/releases/download/fdroid-version/remotedesk-version.txt
 # - Android architecture to build APK for: armeabi-v7a arm64-v8av x86 x86_64
 # - The build step to execute:
 #

@@ -39,7 +39,7 @@ For spesefike git instruksjoner, se [GitHub workflow 101](https://github.com/ser
 
 ## Oppførsel
 
-https://github.com/remotedesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/rustdesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## Kommunikasjon
 

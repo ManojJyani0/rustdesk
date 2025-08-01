@@ -6,22 +6,22 @@
   <a href="#fájl-struktúra">Struktúra</a> •
   <a href="#képernyőképek">Képernyőképek</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-VN.md">Tiếng Việt</a>] | [<a href="README-GR.md">Ελληνικά</a>]<br>
-  <b>Kell a segítséged, hogy lefordítsuk ezt a README-t, <a href="https://github.com/remotedesk/remotedesk/tree/master/src/lang">a RemoteDesk UI-t</a> és a <a href="https://github.com/remotedesk/doc.remotedesk.com">Dokumentációt</a> az anyanyelvedre</b>
+  <b>Kell a segítséged, hogy lefordítsuk ezt a README-t, <a href="https://github.com/rustdesk/remotedesk/tree/master/src/lang">a RemoteDesk UI-t</a> és a <a href="https://github.com/rustdesk/doc.remotedesk.com">Dokumentációt</a> az anyanyelvedre</b>
 </p>
 
 Beszélgess velünk: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/remotedesk) | [Reddit](https://www.reddit.com/r/remotedesk) | [YouTube](https://www.youtube.com/@remotedesk)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-A RemoteDesk egy távoli elérésű asztali szoftver, Rust-ban írva. Működik mindenféle konfiguráció nélkül, feltelepítéssel, vagy anélkül. Az adataidat teljesen te kezeled, nincs szükség aggódásra a harmadik felek miatt. Használhatod a RemoteDesk punblikus randevú/relay szervereit, [hostolhatsz sajátot](https://remotedesk.com/server), vagy akár [írhatsz is egyet](https://github.com/remotedesk/remotedesk-server-demo).
+A RemoteDesk egy távoli elérésű asztali szoftver, Rust-ban írva. Működik mindenféle konfiguráció nélkül, feltelepítéssel, vagy anélkül. Az adataidat teljesen te kezeled, nincs szükség aggódásra a harmadik felek miatt. Használhatod a RemoteDesk punblikus randevú/relay szervereit, [hostolhatsz sajátot](https://remotedesk.com/server), vagy akár [írhatsz is egyet](https://github.com/rustdesk/remotedesk-server-demo).
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
 A RemoteDesk szívesen fogad minden contributiont, támogatást mindenkitől. Lásd a [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) fájlt a kezdéshez.
 
-[**Hogyan működik a RemoteDesk?**](https://github.com/remotedesk/remotedesk/wiki/How-does-RemoteDesk-work%3F)
+[**Hogyan működik a RemoteDesk?**](https://github.com/rustdesk/remotedesk/wiki/How-does-RemoteDesk-work%3F)
 
-[**BINARY LELTÖLTÉS**](https://github.com/remotedesk/remotedesk/releases)
+[**BINARY LELTÖLTÉS**](https://github.com/rustdesk/remotedesk/releases)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
@@ -100,7 +100,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/remotedesk/remotedesk
+git clone https://github.com/rustdesk/remotedesk
 cd remotedesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -113,7 +113,7 @@ VCPKG_ROOT=$HOME/vcpkg cargo run
 Kezdjünk a repo clónozásával, majd pedig a Docker container megépítésével:
 
 ```sh
-git clone https://github.com/remotedesk/remotedesk
+git clone https://github.com/rustdesk/remotedesk
 cd remotedesk
 docker build -t "remotedesk-builder" .
 ```
@@ -141,16 +141,16 @@ Kérlek mindenképpen nézd meg hogy ezeket a parancsokat a root RemoteDesk mapp
 
 ## Fájl Struktúra
 
-- **[libs/hbb_common](https://github.com/remotedesk/remotedesk/tree/master/libs/hbb_common)**: video codec, config, tcp/udp wrapper, protobuf, fs functions for file transfer, and some other utility functions
-- **[libs/scrap](https://github.com/remotedesk/remotedesk/tree/master/libs/scrap)**: screen capture
-- **[libs/enigo](https://github.com/remotedesk/remotedesk/tree/master/libs/enigo)**: platform specific keyboard/mouse control
-- **[src/ui](https://github.com/remotedesk/remotedesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/remotedesk/remotedesk/tree/master/src/server)**: audio/clipboard/input/video services, and network connections
-- **[src/client.rs](https://github.com/remotedesk/remotedesk/tree/master/src/client.rs)**: start a peer connection
-- **[src/rendezvous_mediator.rs](https://github.com/remotedesk/remotedesk/tree/master/src/rendezvous_mediator.rs)**: Communicate with [remotedesk-server](https://github.com/remotedesk/remotedesk-server), wait for remote direct (TCP hole punching) or relayed connection
-- **[src/platform](https://github.com/remotedesk/remotedesk/tree/master/src/platform)**: platform specific code
-- **[flutter](https://github.com/remotedesk/remotedesk/tree/master/flutter)**: Flutter code for mobile
-- **[flutter/web/js](https://github.com/remotedesk/remotedesk/tree/master/flutter/web/js)**: Javascript for Flutter web client
+- **[libs/hbb_common](https://github.com/rustdesk/remotedesk/tree/master/libs/hbb_common)**: video codec, config, tcp/udp wrapper, protobuf, fs functions for file transfer, and some other utility functions
+- **[libs/scrap](https://github.com/rustdesk/remotedesk/tree/master/libs/scrap)**: screen capture
+- **[libs/enigo](https://github.com/rustdesk/remotedesk/tree/master/libs/enigo)**: platform specific keyboard/mouse control
+- **[src/ui](https://github.com/rustdesk/remotedesk/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/rustdesk/remotedesk/tree/master/src/server)**: audio/clipboard/input/video services, and network connections
+- **[src/client.rs](https://github.com/rustdesk/remotedesk/tree/master/src/client.rs)**: start a peer connection
+- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/remotedesk/tree/master/src/rendezvous_mediator.rs)**: Communicate with [remotedesk-server](https://github.com/rustdesk/remotedesk-server), wait for remote direct (TCP hole punching) or relayed connection
+- **[src/platform](https://github.com/rustdesk/remotedesk/tree/master/src/platform)**: platform specific code
+- **[flutter](https://github.com/rustdesk/remotedesk/tree/master/flutter)**: Flutter code for mobile
+- **[flutter/web/js](https://github.com/rustdesk/remotedesk/tree/master/flutter/web/js)**: Javascript for Flutter web client
 
 ## Képernyőképek
 

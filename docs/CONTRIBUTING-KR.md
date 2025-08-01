@@ -39,7 +39,7 @@ RemoteDesk 또는 그 종속성에 대한 기여는 GitHub 풀 리퀘스트 형�
 
 ## 행동 강령
 
-https://github.com/remotedesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/rustdesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## 커뮤니케이션
 

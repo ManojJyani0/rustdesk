@@ -24,7 +24,7 @@ Untuk instruksi Git yang lebih lanjut, cek disini [GitHub workflow 101](https://
 
 ## Tindakan
 
-<https://github.com/remotedesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT-ID.md>
+<https://github.com/rustdesk/remotedesk/blob/master/docs/CODE_OF_CONDUCT-ID.md>
 
 ## Komunikasi
 

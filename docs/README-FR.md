@@ -13,11 +13,11 @@ Chattez avec nous : [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https:/
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-Encore un autre logiciel de bureau à distance, écrit en Rust. Fonctionne directement, aucune configuration n'est nécessaire. Vous avez le contrôle total de vos données, sans aucun souci de sécurité. Vous pouvez utiliser notre serveur de rendez-vous/relais, [configurer le vôtre](https://remotedesk.com/server), ou [écrire votre propre serveur de rendez-vous/relais](https://github.com/remotedesk/remotedesk-server-demo).
+Encore un autre logiciel de bureau à distance, écrit en Rust. Fonctionne directement, aucune configuration n'est nécessaire. Vous avez le contrôle total de vos données, sans aucun souci de sécurité. Vous pouvez utiliser notre serveur de rendez-vous/relais, [configurer le vôtre](https://remotedesk.com/server), ou [écrire votre propre serveur de rendez-vous/relais](https://github.com/rustdesk/remotedesk-server-demo).
 
 RemoteDesk accueille les contributions de tout le monde. Voir [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) pour plus d'informations.
 
-[**TÉLÉCHARGEMENT BINAIRE**](https://github.com/remotedesk/remotedesk/releases)
+[**TÉLÉCHARGEMENT BINAIRE**](https://github.com/rustdesk/remotedesk/releases)
 
 ## Dépendances
 
@@ -88,7 +88,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/remotedesk/remotedesk
+git clone https://github.com/rustdesk/remotedesk
 cd remotedesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -101,7 +101,7 @@ Exécution du cargo
 Commencez par cloner le dépôt et construire le conteneur Docker :
 
 ```sh
-git clone https://github.com/remotedesk/remotedesk
+git clone https://github.com/rustdesk/remotedesk
 cd remotedesk
 docker build -t "remotedesk-builder" .
 ```
@@ -128,14 +128,14 @@ Veuillez vous assurer que vous exécutez ces commandes à partir de la racine du
 
 ## Structure du projet
 
-- **[libs/hbb_common](https://github.com/remotedesk/remotedesk/tree/master/libs/hbb_common)** : codec vidéo, config, wrapper tcp/udp, protobuf, fonctions fs pour le transfert de fichiers, et quelques autres fonctions utilitaires.
-- **[libs/scrap](https://github.com/remotedesk/remotedesk/tree/master/libs/scrap)** : capture d'écran
-- **[libs/enigo](https://github.com/remotedesk/remotedesk/tree/master/libs/enigo)** : contrôle clavier/souris spécifique à la plate-forme
-- **[src/ui](https://github.com/remotedesk/remotedesk/tree/master/src/ui)** : interface graphique
-- **[src/server](https://github.com/remotedesk/remotedesk/tree/master/src/server)** : services audio/clipboard/input/vidéo, et connexions réseau
-- **[src/client.rs](https://github.com/remotedesk/remotedesk/tree/master/src/client.rs)** : démarrer une connexion entre pairs
-- **[src/rendezvous_mediator.rs](https://github.com/remotedesk/remotedesk/tree/master/src/rendezvous_mediator.rs)** : Communiquer avec [remotedesk-server](https://github.com/remotedesk/remotedesk-server), attendre une connexion distante directe (TCP hole punching) ou relayée.
-- **[src/platform](https://github.com/remotedesk/remotedesk/tree/master/src/platform)** : code spécifique à la plateforme
+- **[libs/hbb_common](https://github.com/rustdesk/remotedesk/tree/master/libs/hbb_common)** : codec vidéo, config, wrapper tcp/udp, protobuf, fonctions fs pour le transfert de fichiers, et quelques autres fonctions utilitaires.
+- **[libs/scrap](https://github.com/rustdesk/remotedesk/tree/master/libs/scrap)** : capture d'écran
+- **[libs/enigo](https://github.com/rustdesk/remotedesk/tree/master/libs/enigo)** : contrôle clavier/souris spécifique à la plate-forme
+- **[src/ui](https://github.com/rustdesk/remotedesk/tree/master/src/ui)** : interface graphique
+- **[src/server](https://github.com/rustdesk/remotedesk/tree/master/src/server)** : services audio/clipboard/input/vidéo, et connexions réseau
+- **[src/client.rs](https://github.com/rustdesk/remotedesk/tree/master/src/client.rs)** : démarrer une connexion entre pairs
+- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/remotedesk/tree/master/src/rendezvous_mediator.rs)** : Communiquer avec [remotedesk-server](https://github.com/rustdesk/remotedesk-server), attendre une connexion distante directe (TCP hole punching) ou relayée.
+- **[src/platform](https://github.com/rustdesk/remotedesk/tree/master/src/platform)** : code spécifique à la plateforme
 
 > [!Attention]
 > **Avertissement contre l'utilisation abusive:** <br>

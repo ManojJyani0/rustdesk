@@ -13,17 +13,17 @@ Porozmawiaj z nami na: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](http
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-Kolejny program do zdalnego pulpitu, napisany w Rust. Działa od samego początku, nie wymaga konfiguracji. Masz pełną kontrolę nad swoimi danymi, bez obaw o bezpieczeństwo. Możesz skorzystać z naszego darmowego serwera publicznego, [skonfigurować własny](https://remotedesk.com/server), lub [napisać własny serwer](https://github.com/remotedesk/remotedesk-server-demo).
+Kolejny program do zdalnego pulpitu, napisany w Rust. Działa od samego początku, nie wymaga konfiguracji. Masz pełną kontrolę nad swoimi danymi, bez obaw o bezpieczeństwo. Możesz skorzystać z naszego darmowego serwera publicznego, [skonfigurować własny](https://remotedesk.com/server), lub [napisać własny serwer](https://github.com/rustdesk/remotedesk-server-demo).
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png) 
 
 RemoteDesk zaprasza do współpracy każdego. Zobacz [`docs/CONTRIBUTING-PL.md`](CONTRIBUTING-PL.md) pomoc w uruchomieniu programu.
 
-[**PYTANIA I ODPOWIEDZI (FAQ)**](https://github.com/remotedesk/remotedesk/wiki/FAQ)
+[**PYTANIA I ODPOWIEDZI (FAQ)**](https://github.com/rustdesk/remotedesk/wiki/FAQ)
 
-[**POBIERANIE BINARIÓW**](https://github.com/remotedesk/remotedesk/releases)
+[**POBIERANIE BINARIÓW**](https://github.com/rustdesk/remotedesk/releases)
 
-[**WERSJE TESTOWE (NIGHTLY)**](https://github.com/remotedesk/remotedesk/releases/tag/nightly)
+[**WERSJE TESTOWE (NIGHTLY)**](https://github.com/rustdesk/remotedesk/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
@@ -104,7 +104,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/remotedesk/remotedesk
+git clone https://github.com/rustdesk/remotedesk
 cd remotedesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -117,7 +117,7 @@ cargo run
 Rozpocznij od sklonowania repozytorium i stworzenia kontenera docker:
 
 ```sh
-git clone https://github.com/remotedesk/remotedesk
+git clone https://github.com/rustdesk/remotedesk
 cd remotedesk
 docker build -t "remotedesk-builder" .
 ```
@@ -144,16 +144,16 @@ Upewnij się, że uruchamiasz te polecenia z katalogu głównego repozytorium Re
 
 ## Struktura plików
 
-- **[libs/hbb_common](https://github.com/remotedesk/remotedesk/tree/master/libs/hbb_common)**: kodek wideo, konfiguracja, obsługa tcp/udp, protobuf, funkcje systemu plików do transferu plików i kilka innych funkcji użytkowych
-- **[libs/scrap](https://github.com/remotedesk/remotedesk/tree/master/libs/scrap)**: przechwytywanie ekranu
-- **[libs/enigo](https://github.com/remotedesk/remotedesk/tree/master/libs/enigo)**: specyficzne dla danej platformy sterowanie klawiaturą/myszą
-- **[src/ui](https://github.com/remotedesk/remotedesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/remotedesk/remotedesk/tree/master/src/server)**: audio/schowek/wejście(input)/wideo oraz połączenia sieciowe
-- **[src/client.rs](https://github.com/remotedesk/remotedesk/tree/master/src/client.rs)**: uruchamia połączenie bezpośrednie
-- **[src/rendezvous_mediator.rs](https://github.com/remotedesk/remotedesk/tree/master/src/rendezvous_mediator.rs)**: Komunikacja z [remotedesk-server](https://github.com/remotedesk/remotedesk-server), czekanie na bezpośrednie (odpytywanie TCP) lub przekazywane połączenie
-- **[src/platform](https://github.com/remotedesk/remotedesk/tree/master/src/platform)**: kod specyficzny dla danej platformy
-- **[flutter](https://github.com/remotedesk/remotedesk/tree/master/flutter)**: kod Flutter dla urządzeń mobilnych
-- **[flutter/web/js](https://github.com/remotedesk/remotedesk/tree/master/flutter/web/js)**: JavaScript dla Flutter - klient web
+- **[libs/hbb_common](https://github.com/rustdesk/remotedesk/tree/master/libs/hbb_common)**: kodek wideo, konfiguracja, obsługa tcp/udp, protobuf, funkcje systemu plików do transferu plików i kilka innych funkcji użytkowych
+- **[libs/scrap](https://github.com/rustdesk/remotedesk/tree/master/libs/scrap)**: przechwytywanie ekranu
+- **[libs/enigo](https://github.com/rustdesk/remotedesk/tree/master/libs/enigo)**: specyficzne dla danej platformy sterowanie klawiaturą/myszą
+- **[src/ui](https://github.com/rustdesk/remotedesk/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/rustdesk/remotedesk/tree/master/src/server)**: audio/schowek/wejście(input)/wideo oraz połączenia sieciowe
+- **[src/client.rs](https://github.com/rustdesk/remotedesk/tree/master/src/client.rs)**: uruchamia połączenie bezpośrednie
+- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/remotedesk/tree/master/src/rendezvous_mediator.rs)**: Komunikacja z [remotedesk-server](https://github.com/rustdesk/remotedesk-server), czekanie na bezpośrednie (odpytywanie TCP) lub przekazywane połączenie
+- **[src/platform](https://github.com/rustdesk/remotedesk/tree/master/src/platform)**: kod specyficzny dla danej platformy
+- **[flutter](https://github.com/rustdesk/remotedesk/tree/master/flutter)**: kod Flutter dla urządzeń mobilnych
+- **[flutter/web/js](https://github.com/rustdesk/remotedesk/tree/master/flutter/web/js)**: JavaScript dla Flutter - klient web
 
 ## Zrzuty ekranu
 
